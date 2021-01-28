@@ -8,35 +8,40 @@
 
 </head>
 <body>
-<div class="container margins background">
+<div class="container">
     <h1>Sign In Page</h1>
 
     <form>
         <div class="form-group row">
-            <label for="username" class="col-sm-10 col-form-label">Username</label>
-            <input type="email" class="col-sm-20 form-control" id="username" aria-describedby="emailHelp">
-<!--            <div class="col-sm-10">-->
-<!--                <input type="email" class="form-control" id="username" aria-describedby="emailHelp">-->
-
-<!--            </div>-->
+            <label for="username" class="col-sm-5 col-form-label">Username</label>
+            <div class="col-sm-10">
+                <input type="email" id="username" placeholder="Wenhao">
+            </div>
         </div>
-        <div class="form-group row">
-            <label for="password" class="col-sm-10 col-form-label">Password</label>
-            <input type="password" class="col-sm-20 form-control" id="password">
-<!--            <div class="col-sm-10">-->
-<!--                <input type="password" class="form-control" id="password">-->
-<!--            </div>-->
+        <div class="">
+            <label for="password" class="col-sm-5 col-form-label">Password</label>
+            <div class="col-md-10">
+                <input type="password" id="password" placeholder="#$%^^&*()">
+            </div>
         </div>
         <div>
-            <button type="submit" class="btn btn-primary">Sign In</button>
+            <a href="../profile/profile.template.client.html"
+               class="btn btn-primary"
+               role="button"
+               aria-pressed="true">Sign In</a>
+
             <a href="../register/register.template.client.html"
-               class="btn btn-primary btn-lg active"
+               class="btn btn-primary"
                role="button"
                aria-pressed="true">Sign Up</a>
         </div>
 
         <br/>
-        <a href="">Forget Password</a>
+        <div>
+            <a href="">Forget Password</a>
+            <a href="../index.html">Home</a>
+        </div>
+
 
     </form>
 
