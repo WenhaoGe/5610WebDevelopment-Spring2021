@@ -1,0 +1,34 @@
+.padding-setting {
+
+    padding-top: 10px;
+}
+.editor-sticky-top {
+    position: static;
+    /*width: 100%;*/
+    background-color: darkcyan;
+    z-index: 1;
+    padding-top: 20px;
+    height: 60px;
+    margin: 1px;
+}
+
+.firstLine-margin {
+    margin-left: 30px;
+}
+
+.remove-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.line-height {
+    line-height: 1;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.padding-on-top {
+    padding-top: 13px;
+}
