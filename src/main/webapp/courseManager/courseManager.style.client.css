@@ -1,0 +1,29 @@
+.wbdv-sticky-top {
+    position: static;
+    /*width: 100%;*/
+    background-color: skyblue;
+    z-index: 1;
+    padding-top: 20px;
+    height: 60px;
+    margin: 1px;
+}
+
+.wbdv-padding-5px {
+    padding: 1px;
+}
+
+.wbdv-padding-ontop {
+    padding-top: 20px;
+}
+
+.titles-padding-ontop {
+    padding-top: 10px;
+}
+
+.font-control {
+    font-size: 10px;
+}
+
+.title-margin {
+    margin-left: auto;
+}
