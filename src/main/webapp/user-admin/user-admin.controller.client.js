@@ -94,7 +94,7 @@ function main() {
     $updateBtn = $(".wbdv-update-btn")
     $updateBtn.click(updateUser)
     $createBtn.click(createUser)
-    userService.findAllCourses().then(function (actualUsers) {
+    userService.findAllUsers().then(function (actualUsers) {
         users = actualUsers
         renderUsers(users)
     })
