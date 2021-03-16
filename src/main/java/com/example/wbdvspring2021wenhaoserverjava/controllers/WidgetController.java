@@ -63,6 +63,8 @@ public class WidgetController {
           @PathVariable("wid") String wid) {
 
     return service.findWidgetById(wid);
+
+
   }
 
 }
