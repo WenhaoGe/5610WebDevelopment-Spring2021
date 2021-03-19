@@ -19,11 +19,12 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "*")
 public class WidgetController {
+
   @Autowired
   WidgetService service;
 
   @PostMapping("api/topics/{tid}/widgets")
-  Widget createWidget (
+  public Widget createWidget (
           @PathVariable("tid") String tid,
           @RequestBody Widget widget) {
 
@@ -31,14 +32,14 @@ public class WidgetController {
 
   }
   @GetMapping("/api/topics/{tid}/widgets")
-  List<Widget> findWidgetsForTopic(
+  public List<Widget> findWidgetsForTopic(
           @PathVariable("tid") String tid) {
 
     return service.findWidgetsForTopic(tid);
 
   }
   @PutMapping("/api/widgets/{wid}")
-  int updateWidget(
+  public int updateWidget(
           @PathVariable("wid") String wid,
           @RequestBody Widget widget) {
 
@@ -46,25 +47,23 @@ public class WidgetController {
   }
 
   @DeleteMapping("/api/widgets/{wid}")
-  int deleteWidget(
+  public int deleteWidget(
           @PathVariable("wid") String wid) {
 
     return service.deleteWidget(wid);
   }
 
   @GetMapping("/api/widgets")
-  List<Widget> findAllWidgets() {
+  public List<Widget> findAllWidgets() {
 
     return service.findAllWidgets();
   }
 
   @GetMapping("/api/widgets/{wid}")
-  Widget findWidgetById(
+  public Widget findWidgetById(
           @PathVariable("wid") String wid) {
 
     return service.findWidgetById(wid);
-
-
   }
 
 }
