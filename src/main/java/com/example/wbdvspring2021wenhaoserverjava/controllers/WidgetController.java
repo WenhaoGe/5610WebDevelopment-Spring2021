@@ -61,7 +61,7 @@ public class WidgetController {
 
   @GetMapping("/api/widgets/{wid}")
   public Widget findWidgetById(
-          @PathVariable("wid") String wid) {
+          @PathVariable("wid") Long wid) {
 
     return service.findWidgetById(wid);
   }

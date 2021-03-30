@@ -1,12 +1,61 @@
 package com.example.wbdvspring2021wenhaoserverjava.models;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
 
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   private String type;
   private Integer size;
   private String text;
   private String topicId;
+  private Integer width;
+  private Integer height;
+  private String src;
+  private Boolean ordered;
+
+  public String getSrc() {
+    return src;
+  }
+
+  public void setSrc(String src) {
+    this.src = src;
+  }
+
+  public Boolean getOrdered() {
+    return ordered;
+  }
+
+  public void setOrdered(Boolean ordered) {
+    this.ordered = ordered;
+  }
+
+
+  public Integer getWidth() {
+    return width;
+  }
+
+  public void setWidth(Integer width) {
+    this.width = width;
+  }
+
+  public Integer getHeight() {
+    return height;
+  }
+
+  public void setHeight(Integer height) {
+    this.height = height;
+  }
 
   public Widget() {
   }
@@ -59,3 +108,31 @@ public class Widget {
     this.text = text;
   }
 }
+
+/*
+create table widget (
+       id bigint not null,
+        height integer,
+        size integer,
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
+
+/*
+create table widgets (
+       id bigint not null auto_increment,
+        height integer,
+        ordered bit,
+        size integer,
+        src varchar(255),
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
