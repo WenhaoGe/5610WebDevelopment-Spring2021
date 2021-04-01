@@ -46,6 +46,10 @@ public class WidgetService {
 
     Widget originalWidget = findWidgetById(wid);
     originalWidget.setText(widget.getText());
+    originalWidget.setSrc(widget.getSrc());
+    originalWidget.setWidth(widget.getWidth());
+    originalWidget.setHeight(widget.getHeight());
+    // width height
 
     repository.save(originalWidget);
     return 1;
